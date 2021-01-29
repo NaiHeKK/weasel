@@ -12,8 +12,8 @@ environment:
 
 cache:
   - boost.cached -> appveyor_build_boost.bat
-  - C:\Libraries\boost_1_69_0\stage -> appveyor_build_boost.bat
-  - C:\Libraries\boost_1_69_0\stage_x64 -> appveyor_build_boost.bat
+  - C:\Libraries\boost_1_75_0\stage -> appveyor_build_boost.bat
+  - C:\Libraries\boost_1_75_0\stage_x64 -> appveyor_build_boost.bat
 
 init:
   - git --version
