@@ -9,7 +9,6 @@ environment:
   BOOST_ROOT: C:\Libraries\boost_1_69_0
   CMAKE_GENERATOR: Visual Studio 15 2017
   PLATFORM_TOOLSET: v141_xp
-  APPVEYOR_REPO_TAG: true
 
 cache:
   - boost.cached -> appveyor_build_boost.bat
@@ -33,10 +32,10 @@ artifacts:
 
 deploy:
   - provider: BinTray
-    username: lotem
+    username: yuankk
     api_key: &bintray_api_key
-      secure: KutsvYFjEDoWMhEKxBP2DlXku/pSVfUsNnG70GFyYQo2vZ8GP0Yzu1rrfvyTEQbTZaJF3gwZ+2+Z5mDXsUSeIouiqzlQjiCKYScuEttLF5w=
-    subject: rime
+      secure: 7x1Gu8m7EqEwdJDaYy7mX3qHcF4cCJx2JHfuWMg+QmmDMgRfegHc0TTEAKNaniZQ
+    subject: naihe
     repo: weasel
     package: release
     version: 0.14.3
@@ -46,9 +45,9 @@ deploy:
     on:
       APPVEYOR_REPO_TAG: true
   - provider: BinTray
-    username: lotem
+    username: yuankk
     api_key: *bintray_api_key
-    subject: rime
+    subject: naihe
     repo: weasel
     package: testing
     version: 0.14.3.$(APPVEYOR_BUILD_NUMBER)
