@@ -16,7 +16,7 @@ cache:
   - C:\Libraries\boost_1_75_0\stage_x64 -> appveyor_build_boost.bat
 
 init:
-  - dir
+  - dir C:\Libraries
   - git --version
   - git config --global core.autocrlf true
 
