@@ -8,7 +8,7 @@ set boost_compiled_libs=--with-date_time^
  --with-system^
  --with-thread
 
-set boost_build_options_common=toolset=msvc-14.2^
+set boost_build_options_common=toolset=msvc-14.1^
  variant=release^
  link=static^
  threading=multi^
