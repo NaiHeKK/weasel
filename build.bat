@@ -222,7 +222,7 @@ if errorlevel 1 goto error
 exit /b
 
 :build_opencc_data
-if not exist %WEASEL_ROOT%\librime\thirdparty\share\opencc\TSCharacters.ocd (
+if not exist %WEASEL_ROOT%\librime\thirdparty\share\opencc\TSCharacters.ocd* (
   cd %WEASEL_ROOT%\librime
   call build.bat thirdparty %rime_build_variant%
   if errorlevel 1 goto error
