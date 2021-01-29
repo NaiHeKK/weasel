@@ -24,7 +24,7 @@ install:
 
 build_script:
   - if "%APPVEYOR_REPO_TAG%" == "false" set WEASEL_BUILD=%APPVEYOR_BUILD_NUMBER%
-  - .\build.bat data hant installer
+  - .\build.bat data hant weasel installer
 
 artifacts:
   - path: output\archives\weasel-0.14.3.*-installer.exe
