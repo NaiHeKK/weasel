@@ -27,7 +27,7 @@ echo.
 
 if not defined BJAM_TOOLSET (
   rem the number actually means platform toolset, not %VisualStudioVersion%
-  set BJAM_TOOLSET=msvc-16.4
+  set BJAM_TOOLSET=msvc-14.22
 )
 
 if not defined PLATFORM_TOOLSET (
